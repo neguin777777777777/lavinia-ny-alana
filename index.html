@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório Virtual de Química</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    
+        <nav>
+            <ul>
+                <h3><li><a href="#biografias">Biografias</a></li></h3>
+                <h3><li><a href="#nomenclaturas">Nomenclaturas</a></li></h3>
+                <h3><li><a href="#tabela-periodica">Tabela Periódica</a></li></h3>
+                <section id="pesquisa">
+                    <section id="pesquisa">
+                        <input type="text" id="search" placeholder="Pesquisar cientistas ou termos...">
+                        <button onclick="pesquisar()">
+                            <i class="fas fa-search"></i> <!-- Ícone da lupa -->
+                        </button>
+                        <div id="resultados-pesquisa"></div>
+                    </section>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="biografias">
+            <h2>Biografias de Cientistas</h2>
+            <div class="cientista" onclick="openBio('marie-curie')">
+                <img src="img/curie.jfif" alt="Marie Curie">
+                <h3>Marie Curie</h3>
+                <p></p>
+            </div>
+            <div class="cientista" onclick="openBio('john-dalton')">
+                <img src="img/dalton.jfif" alt="John Dalton">
+                <h3>John Dalton</h3>
+                <p></p>
+            </div>
+            <div class="cientista" onclick="openBio('dmitri-mendeleev')">
+                <img src="img/Dmitri.jfif" alt="Dmitri Mendeleev">
+                <h3>Dmitri Mendeleev</h3>
+                <p></p>
+            </div>
+        </section>
+
+        <section id="nomenclaturas">
+            <h2>Nomenclaturas Químicas</h2>
+            <div class="tabs">
+                <button class="tab-button active" data-tab="nomenclatura-a">A</button>
+                <button class="tab-button" data-tab="nomenclatura-b">B</button>
+                <button class="tab-button" data-tab="nomenclatura-c">C</button>
+                <button class="tab-button" data-tab="nomenclatura-D">D</button>
+                <button class="tab-button" data-tab="nomenclatura-E">E</button>
+                <button class="tab-button" data-tab="nomenclatura-F">F</button>
+                <button class="tab-button" data-tab="nomenclatura-G">G</button>
+                <button class="tab-button" data-tab="nomenclatura-H">H</button>
+                <button class="tab-button" data-tab="nomenclatura-I">I</button>
+                <button class="tab-button" data-tab="nomenclatura-J">J</button>
+                <button class="tab-button" data-tab="nomenclatura-K">K</button>
+                <button class="tab-button" data-tab="nomenclatura-L">L</button>
+                <button class="tab-button" data-tab="nomenclatura-M">M</button>
+                <button class="tab-button" data-tab="nomenclatura-N">N</button>
+                <button class="tab-button" data-tab="nomenclatura-O">O</button>
+                <button class="tab-button" data-tab="nomenclatura-P">P</button>
+                <button class="tab-button" data-tab="nomenclatura-Q">Q</button>
+                <button class="tab-button" data-tab="nomenclatura-R">R</button>
+                <button class="tab-button" data-tab="nomenclatura-S">S</button>
+                <button class="tab-button" data-tab="nomenclatura-T">T</button>
+                <button class="tab-button" data-tab="nomenclatura-U">U</button>     
+                <button class="tab-button" data-tab="nomenclatura-V">V</button>
+                <button class="tab-button" data-tab="nomenclatura-W">W</button>
+                <button class="tab-button" data-tab="nomenclatura-X">X</button>
+                <button class="tab-button" data-tab="nomenclatura-Y">Y</button>
+                <button class="tab-button" data-tab="nomenclatura-Z">Z</button>
+                <!-- Adicione mais botões conforme necessário -->
+            </div>
+            <div id="nomenclatura-a" class="tab-pane active">
+                <h3>Letra A</h3>
+                <ul>
+                    <li><a href="acido.html">Ácido</a></li>
+                    <li><a href="alcalino.html">Alcalino</a></li>
+                    <li><a href="alcalinoterreo.html">Alcalinotérreo</a></li>
+                    <li><a href="atomo.html">Átomo</a></li>
+                    <li><a href="alcenos.html">Alcenos</a></li>
+                    <li><a href="amonia.html">Amônia</a></li>
+                    <li><a href="absorçao.html">Absorção</a></li>
+                    <li><a href="aldoxila.html">Aldoxila</a></li>
+                    <li><a href="aldeido.html">Aldeido</a></li>
+                    <li><a href="areometro.html">Areômetro</a></li>
+                    <li><a href="altoionizacao.html">Altoionização</a></li>
+                    <li><a href="aquecimento.html">Aquecimento</a></li>
+                    <!-- Adicione mais termos conforme necessário -->
+                </ul>
+            </div>
+            <div id="nomenclatura-b" class="tab-pane">
+                <h3>Letra B</h3>
+                <ul>
+                    <li><a href="base.html">Base</a></li>
+                    <li><a href="bario.html">Bário</a></li>
+                    <li><a href="borato.html">Borato</a></li>
+                    <li><a href="brix.html">Brix</a></li>
+                    <li><a href="bureta.html">Bureta</a></li>
+                    <li><a href="bequer.html">Béquer</a></li>
+                    <!-- Adicione mais termos conforme necessário -->
+                </ul>
+            </div>
+            <div id="nomenclatura-c" class="tab-pane">
+                <h3>Letra C</h3>
+                <ul>
+                    <li><a href="catalisador.html">Catalisador</a></li>
+                    <li><a href="combustivel.html">Combustível</a></li>
+                    <li><a href="composto.html">Composto</a></li>
+                    <li><a href="calcio.html">Cálcio</a></li>
+                    <li><a href="chumbo.html">Chumbo</a></li>
+                    <li><a href="cetona.html">Cetona</a></li>
+                    <!-- Adicione mais termos conforme necessário -->
+                </ul>
+            </div>
+            <div id="nomenclatura-D" class="tab-pane">
+                <h3>Letra D</h3>
+                <ul>
+                    <li><a href="decantação.html">Decantação</a></li>
+                    <li><a href="densidade.html">Densidade</a></li>
+                    <li><a href="destilaçao.html">Destilação</a></li>
+                    <!-- Adicione mais termos conforme necessário -->
+                </ul>
+            </div>
+            <div id="nomenclatura-E" class="tab-pane">
+                <h3>Letra E</h3>
+                <ul>
+                    <li><a href="ebulicao.html">Ebulição</a></li>
+                    <li><a href="eleento.html">Elemento</a></li>
+                    <li><a href="eletrodo.html">Eletrodo</a></li>
+                    <!-- Adicione mais termos conforme necessário -->
+                </ul>
+            </div>
+            <div id="nomenclatura-F" class="tab-pane">
+                <h3>Letra F</h3>
+                <ul>
+                    <li><a href="fenolftaleina.html">Fenolftaleína</a></li>
+                    <li><a href="filtracao.html">Filtração</a></li>
+                    <li><a href="fluoreto.html">Fluoreto</a></li>
+                    <!-- Adicione mais termos conforme necessário -->
+                </ul>
+            </div>
+            <div id="nomenclatura-G" class="tab-pane">
+                <h3>Letra G</h3>
+                <ul>
+                    <li><a href="gas.html">Gás</a></li>
+                    <!-- Adicione mais termos conforme necessário -->
+                </ul>
+            </div>
+            <div id="nomenclatura-H" class="tab-pane">
+                <h3>Letra H</h3>
+                <ul>
+                    <li><a href="heteroatomos.html">Heteroátomos</a></li>
+                    <li><a href="hidrpcarbonetos.html">Hidrocarbonetos</a></li>
+                    <li><a href="hidroxila.html">Hidroxila</a></li>
+                    <!-- Adicione mais termos conforme necessário -->
+                </ul>
+            </div>
+            <div id="nomenclatura-I" class="tab-pane">
+                <h3>Letra I</h3>
+                <ul>
+                    <li><a href="iodeto.html">Iodeto</a></li>
+                    <li><a href="ion.html">Íon</a></li>
+                    <li><a href="isometria.html">Isometria</a></li>
+                    <!-- Adicione mais termos conforme necessário -->
+                </ul>
+            </div>
+            <div id="nomenclatura-J" class="tab-pane">
+                <h3>Letra J</h3>
+                <ul>
+                    <li><a href="javalle.html">Javalle</a></li>
+                    <!-- Adicione mais termos conforme necessário -->
+                </ul>
+                <div id="nomenclatura-K" class="tab-pane">
+                    <h3>Letra K</h3>
+                    <ul>
+                        <li><a href="katal.html">Katal</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-L" class="tab-pane">
+                    <h3>Letra L</h3>
+                    <ul>
+                        <li><a href="lavagem.html">Lavagem</a></li>
+                        <li><a href="liquefacao.html">Liquefação</a></li>
+                        <li><a href="legibilidade.html">Legibilidade</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-M" class="tab-pane">
+                    <h3>Letra M</h3>
+                    <ul>
+                        <li><a href="mol.html">Mol</a></li>
+                        <li><a href="molecula.html">Molécula</a></li>
+                        <li><a href="mufla.html">Mufla</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-N" class="tab-pane">
+                    <h3>Letra N</h3>
+                    <ul>
+                        <li><a href="neutralizacao.html">Neutralização</a></li>
+                        <li><a href="neutrons.html">Nêutrons</a></li>
+                        <li><a href="nitrilo.html">Nitrilo</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-O" class="tab-pane">
+                    <h3>Letra O</h3>
+                    <ul>
+                        <li><a href="oxalatos.html">Oxalatos</a></li>
+                        <li><a href="oxidacao.html">Oxidação</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-P" class="tab-pane">
+                    <h3>Letra P</h3>
+                    <ul>
+                        <li><a href="pesafiltro.html">Pesafiltro</a></li>
+                        <li><a href="pipeta.html">Pipeta</a></li>
+                        <li><a href="potassio.html">Potássio</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-Q" class="tab-pane">
+                    <h3>Letra Q</h3>
+                    <ul>
+                        <li><a href="qualitativo.html">Qualitativo</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-R" class="tab-pane">
+                    <h3>Letra R</h3>
+                    <ul>
+                        <li><a href="reacao.html">Reação</a></li>
+                        <li><a href="reagente.html">Reagente</a></li>
+                        <li><a href="reducao.html">Redução</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-S" class="tab-pane">
+                    <h3>Letra S</h3>
+                    <ul>
+                        <li><a href="sacarose.html">Sacarose</a></li>
+                        <li><a href="sodio.html">Sódio</a></li>
+                        <li><a href="solvente.html">Solvente</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-T" class="tab-pane">
+                    <h3>Letra T</h3>
+                    <ul>
+                        <li><a href="temperatura.html">Temperatura</a></li>
+                        <li><a href="teor.html">Teor</a></li>
+                        <li><a href="tolueno.html">Tolueno</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>    <div id="nomenclatura-U" class="tab-pane">
+                    <h3>Letra U</h3>
+                    <ul>
+                        <li><a href="ultracongelamento.html">Ultracongelamento</a></li>
+                        <li><a href="ureia.html">Uréia</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-V" class="tab-pane">
+                    <h3>Letra V</h3>
+                    <ul>
+                        <li><a href="vanadio.html">Vanádio</a></li>
+                        <li><a href="vazamento.html">Vazamento</a></li>
+                        <li><a href="volume.html">Volume</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-W" class="tab-pane">
+                    <h3>Letra W</h3>
+                    <ul>
+                        <li><a href="watt.html">Watt</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-X" class="tab-pane">
+                    <h3>Letra X</h3>
+                    <ul>
+                        <li><a href="xenomio.html">Xenômio</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-Y" class="tab-pane">
+                    <h3>Letra Y</h3>
+                    <ul>
+                        <li><a href="yttrium.html">Yttrium</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+                <div id="nomenclatura-Z" class="tab-pane">
+                    <h3>Letra Z</h3>
+                    <ul>
+                        <li><a href="zinco.html">Zinco</a></li>
+                        <!-- Adicione mais termos conforme necessário -->
+                    </ul>
+                </div>
+            </div>
+            <!-- Adicione mais seções de nomenclaturas conforme necessário -->
+        </section>
+
+        <section id="tabela-periodica"  a href="tabela-periodica
+        ">
+            <table class="tabela-periodica">
+                <thead>
+                    <tr class="hidden-row">
+                        <th></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Exemplo de linha para os elementos da tabela periódica -->
+                   <tr class="hidden-row"></tr>
+                        <td>1</td>
+                        <td class="elemento" data-simbolo="H" data-nome="Hidrogênio" onclick="mostrarInfo('H', 'Hidrogênio')">H<br>1</td>
+                        <td colspan="16"></td>
+                        <td class="elemento" data-simbolo="He" data-nome="Hélio" onclick="mostrarInfo('He', 'Hélio')">He<br>2</td>
+                    </tr>
+                    <tr class="hidden-row">
+                        <td>2</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Li<br>3</td>
+                        <td class="elemento" data-simbolo="Be" data-nome="Berílio" onclick="mostrarInfo('Be', 'Berílio')">Be<br>4</td>
+                        <td colspan="10"></td>
+                        <td class="elemento" data-simbolo="B" data-nome="Boro" onclick="mostrarInfo('B', 'Boro')">B<br>5</td>
+                        <td class="elemento" data-simbolo="C" data-nome="Carbono" onclick="mostrarInfo('C', 'Carbono')">C<br>6</td>
+                        <td class="elemento" data-simbolo="N" data-nome="Nitrogênio" onclick="mostrarInfo('N', 'Nitrogênio')">N<br>7</td>
+                        <td class="elemento" data-simbolo="O" data-nome="Oxigênio" onclick="mostrarInfo('O', 'Oxigênio')">O<br>8</td>
+                        <td class="elemento" data-simbolo="F" data-nome="Flúor" onclick="mostrarInfo('F', 'Flúor')">F<br>9</td>
+                        <td class="elemento" data-simbolo="Ne" data-nome="Neônio" onclick="mostrarInfo('Ne', 'Neônio')">Ne<br>10</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="elemento" data-simbolo="Na" data-nome="Sodio" onclick="mostrarInfo('Na', 'Sodio')">Na<br>11</td>
+                        <td class="elemento" data-simbolo="Mg" data-nome="Magnesio" onclick="mostrarInfo('Mg', 'Magnesio')">Mg<br>12</td>
+                        <td colspan="10"></td>
+                        <td class="elemento" data-simbolo="Al" data-nome="Aluminio" onclick="mostrarInfo('Al', 'Aluminio')">Al<br>13</td>
+                        <td class="elemento" data-simbolo="Si" data-nome="Silicio" onclick="mostrarInfo('Si', 'Silicio')">Si<br>14</td>
+                        <td class="elemento" data-simbolo="P" data-nome="Fosforo" onclick="mostrarInfo('P', 'Fosforo')">P<br>15</td>
+                        <td class="elemento" data-simbolo="S" data-nome="Enxofre" onclick="mostrarInfo('S', 'Enxofre')">S<br>16</td>
+                        <td class="elemento" data-simbolo="Cl" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Cl<br>17</td>
+                        <td class="elemento" data-simbolo="Ar" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ar<br>18</td>   
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">K<br>19</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ca<br>20</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">So<br>21</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ti<br>22</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">V<br>23</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Cr<br>24</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Mn<br>25</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Fe<br>26</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Co<br>27</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ni<br>28</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Cu<br>29</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Zn<br>30</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ga<br>31</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ge<br>32</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">As<br>33</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Se<br>34</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Br<br>35</td> 
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Kr<br>36</td>     
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Rb<br>37</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Sr<br>38</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Y<br>39</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Zr<br>40</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Nb<br>41</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ma<br>42</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Tc<br>43</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ru<br>44</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Rh<br>45</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Pd<br>46</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ag<br>47</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Cd<br>48</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">In<br>49</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Sn<br>50</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Sb<br>51</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Te<br>52</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">I<br>53</td> 
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Xe<br>54</td>     
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Cs<br>55</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ba<br>56</td>
+                        <td class="elemento" data-simbolo="" data-nome="" onclick="mostrarInfo('Li', 'Lítio')"><br></td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Hf<br>72</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ta<br>73</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">W<br>74</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Re<br>75</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Os<br>76</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ir<br>77</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Pt<br>78</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Au<br>79</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Hg<br>80</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ti<br>81</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Pb<br>82</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Bi<br>83</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Po<br>84</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ai<br>85</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Rn<br>86</td>     
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Fr<br>87</td> 
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ra<br>88</td>   
+                        <td class="elemento" data-simbolo="" data-nome="" onclick="mostrarInfo('Li', 'Lítio')"><br></td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Rf<br>104</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Db<br>105</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Sg<br>106</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Bh<br>107</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Hs<br>108</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Mt<br>109</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ds<br>110</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Rg<br>111</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Cn<br>112</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Nh<br>113</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Fl<br>114</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Mc<br>115</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Lv<br>116</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ts<br>117</td>   
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Og<br>118</td>    
+                    </tr>
+                    <tr>
+                        <td colspan="3"></td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">La<br>57</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ce<br>58</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Pr<br>59</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Nd<br>60</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Pm<br>61</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Sm<br>62</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Eu<br>63</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Gd<br>64</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Tb<br>65</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Dy<br>66</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ho<br>67</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Er<br>68</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Tm<br>69</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Yb<br>70</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Lu<br>71</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"></td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Ac<br>89</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Th<br>90</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Pa<br>91</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">U<br>92</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">No<br>93</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Pu<br>94</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Am<br>95</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Cm<br>96</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Bk<br>97</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Cf<br>98</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Es<br>99</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Fm<br>100</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Md<br>101</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">No<br>102</td>
+                        <td class="elemento" data-simbolo="Li" data-nome="Lítio" onclick="mostrarInfo('Li', 'Lítio')">Lr<br>103</td>
+                    </tr>
+                    <!-- Continue adicionando as linhas restantes da tabela periódica -->
+                </tbody>
+            </table>
+        </section>
+
+     
+    </main>
+
+    <footer>
+        <p>© 2024 Laboratório Virtual de Química</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

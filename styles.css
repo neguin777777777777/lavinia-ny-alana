@@ -1,0 +1,320 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4a148c;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.cientista {
+    background-color: #d3a8f4;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cientista img {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #4a148c;
+}
+
+.tab-button {
+    background-color: #cf6ce0;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    flex: 3;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.tab-button.active {
+    background-color: #4a148c;
+    color: white;
+}
+
+.tab-pane {
+    display: none;
+    padding: 10px;
+    border: 1px solid #4a148c;
+    border-top: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* Definindo estilos básicos para a tabela */
+/* Estilos básicos para a tabela */
+.tabela-periodica {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.tabela-periodica th,
+.tabela-periodica td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+/* Cores dos grupos de elementos */
+
+/* Metais alcalinos */
+.tabela-periodica .elemento[data-simbolo="H"] {
+    background-color: #f0f0f0; /* Hidrogênio */
+}
+.tabela-periodica .elemento[data-simbolo="Li"],
+.tabela-periodica .elemento[data-simbolo="Na"],
+.tabela-periodica .elemento[data-simbolo="K"],
+.tabela-periodica .elemento[data-simbolo="Rb"],
+.tabela-periodica .elemento[data-simbolo="Cs"],
+.tabela-periodica .elemento[data-simbolo="Fr"] {
+    background-color: #ff6666; /* Metais alcalinos */
+}
+
+/* Metais alcalino-terrosos */
+.tabela-periodica .elemento[data-simbolo="Be"],
+.tabela-periodica .elemento[data-simbolo="Mg"],
+.tabela-periodica .elemento[data-simbolo="Ca"],
+.tabela-periodica .elemento[data-simbolo="Sr"],
+.tabela-periodica .elemento[data-simbolo="Ba"],
+.tabela-periodica .elemento[data-simbolo="Ra"] {
+    background-color: #ffcc66; /* Metais alcalino-terrosos */
+}
+
+/* Metaloides */
+.tabela-periodica .elemento[data-simbolo="B"],
+.tabela-periodica .elemento[data-simbolo="Si"],
+.tabela-periodica .elemento[data-simbolo="Ge"],
+.tabela-periodica .elemento[data-simbolo="As"],
+.tabela-periodica .elemento[data-simbolo="Sb"],
+.tabela-periodica .elemento[data-simbolo="Bi"] {
+    background-color: #c2f0c2; /* Metaloides */
+}
+
+/* Não-metais */
+.tabela-periodica .elemento[data-simbolo="C"],
+.tabela-periodica .elemento[data-simbolo="N"],
+.tabela-periodica .elemento[data-simbolo="O"],
+.tabela-periodica .elemento[data-simbolo="F"],
+.tabela-periodica .elemento[data-simbolo="P"],
+.tabela-periodica .elemento[data-simbolo="S"],
+.tabela-periodica .elemento[data-simbolo="Cl"],
+.tabela-periodica .elemento[data-simbolo="Br"],
+.tabela-periodica .elemento[data-simbolo="I"],
+.tabela-periodica .elemento[data-simbolo="At"] {
+    background-color: #66b3ff; /* Não-metais */
+}
+
+/* Gases nobres */
+.tabela-periodica .elemento[data-simbolo="He"],
+.tabela-periodica .elemento[data-simbolo="Ne"],
+.tabela-periodica .elemento[data-simbolo="Ar"],
+.tabela-periodica .elemento[data-simbolo="Kr"],
+.tabela-periodica .elemento[data-simbolo="Xe"],
+.tabela-periodica .elemento[data-simbolo="Rn"] {
+    background-color: #e0e0e0; /* Gases nobres */
+}
+
+/* Metais de transição */
+.tabela-periodica .elemento[data-simbolo="Sc"],
+.tabela-periodica .elemento[data-simbolo="Ti"],
+.tabela-periodica .elemento[data-simbolo="V"],
+.tabela-periodica .elemento[data-simbolo="Cr"],
+.tabela-periodica .elemento[data-simbolo="Mn"],
+.tabela-periodica .elemento[data-simbolo="Fe"],
+.tabela-periodica .elemento[data-simbolo="Co"],
+.tabela-periodica .elemento[data-simbolo="Ni"],
+.tabela-periodica .elemento[data-simbolo="Cu"],
+.tabela-periodica .elemento[data-simbolo="Zn"],
+.tabela-periodica .elemento[data-simbolo="Y"],
+.tabela-periodica .elemento[data-simbolo="Zr"],
+.tabela-periodica .elemento[data-simbolo="Nb"],
+.tabela-periodica .elemento[data-simbolo="Mo"],
+.tabela-periodica .elemento[data-simbolo="Tc"],
+.tabela-periodica .elemento[data-simbolo="Ru"],
+.tabela-periodica .elemento[data-simbolo="Rh"],
+.tabela-periodica .elemento[data-simbolo="Pd"],
+.tabela-periodica .elemento[data-simbolo="Ag"],
+.tabela-periodica .elemento[data-simbolo="Cd"],
+.tabela-periodica .elemento[data-simbolo="Hf"],
+.tabela-periodica .elemento[data-simbolo="Ta"],
+.tabela-periodica .elemento[data-simbolo="W"],
+.tabela-periodica .elemento[data-simbolo="Re"],
+.tabela-periodica .elemento[data-simbolo="Os"],
+.tabela-periodica .elemento[data-simbolo="Ir"],
+.tabela-periodica .elemento[data-simbolo="Pt"],
+.tabela-periodica .elemento[data-simbolo="Au"],
+.tabela-periodica .elemento[data-simbolo="Hg"] {
+    background-color: #8c8c8c; /* Metais de transição */
+}
+
+/* Lantanídeos e actinídeos */
+.tabela-periodica .elemento[data-simbolo="La"],
+.tabela-periodica .elemento[data-simbolo="Ce"],
+.tabela-periodica .elemento[data-simbolo="Pr"],
+.tabela-periodica .elemento[data-simbolo="Nd"],
+.tabela-periodica .elemento[data-simbolo="Pm"],
+.tabela-periodica .elemento[data-simbolo="Sm"],
+.tabela-periodica .elemento[data-simbolo="Eu"],
+.tabela-periodica .elemento[data-simbolo="Gd"],
+.tabela-periodica .elemento[data-simbolo="Tb"],
+.tabela-periodica .elemento[data-simbolo="Dy"],
+.tabela-periodica .elemento[data-simbolo="Ho"],
+.tabela-periodica .elemento[data-simbolo="Er"],
+.tabela-periodica .elemento[data-simbolo="Tm"],
+.tabela-periodica .elemento[data-simbolo="Yb"],
+.tabela-periodica .elemento[data-simbolo="Lu"],
+.tabela-periodica .elemento[data-simbolo="Ac"],
+.tabela-periodica .elemento[data-simbolo="Th"],
+.tabela-periodica .elemento[data-simbolo="Pa"],
+.tabela-periodica .elemento[data-simbolo="U"],
+.tabela-periodica .elemento[data-simbolo="Np"],
+.tabela-periodica .elemento[data-simbolo="Pu"],
+.tabela-periodica .elemento[data-simbolo="Am"],
+.tabela-periodica .elemento[data-simbolo="Cm"] {
+    background-color: #66b3ff;
+}
+
+.tabela-periodica .elemento[data-simbolo="Bk"],
+.tabela-periodica .elemento[data-simbolo="Cf"],
+.tabela-periodica .elemento[data-simbolo="Es"],
+.tabela-periodica .elemento[data-simbolo="Fm"],
+.tabela-periodica .elemento[data-simbolo="Md"],
+.tabela-periodica .elemento[data-simbolo="No"] {
+    background-color: #bfa55d; /* Lantanídeos e actinídeos */
+}
+
+/* Estilo de hover para destacar elementos */
+.tabela-periodica .elemento:hover {
+    background-color: #ffd700; /* Destaque ao passar o mouse */
+}
+
+/* Estilo do número atômico */
+.tabela-periodica .numero-atomico {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Estilo do símbolo e nome do elemento */
+.tabela-periodica .simbolo-elemento {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Adicionando uma cor suave ao fundo da tabela */
+.tabela-periodica {
+    background-color: #ffffff;
+}
+
+
+footer {
+    background-color: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 5px;  /* Espaçamento entre o input e o botão */
+}
+
+#search {
+    width: 200px; /* Defina o tamanho que desejar */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#search:focus {
+    border-color: #774caf;  /* Cor de borda quando em foco */
+    box-shadow: 0 0 8px rgba(102, 34, 190, 0.5);  /* Efeito de sombra no foco */
+}
+
+button {
+    background-color: #6f4caf;  /* Cor do botão */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button i {
+    font-size: 16px;  /* Tamanho do ícone da lupa */
+}
+
+button:hover {
+    background-color: #8345a0;  /* Cor do botão ao passar o mouse */
+}
+
+#resultados-pesquisa {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
